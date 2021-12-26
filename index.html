@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TESLA</title>
+    <link rel="shortcut icon" href="images/Tesla_T_symbol.svg.png" type="image/x-icon">
+
+    <style>
+       
+        img {
+            max-width:10%;
+            height: auto;
+            color: black;
+            
+        }
+    </style>
+   
+</head>
+<body>
+    <div class="header" id="header">
+        
+        <nav>
+            <img src="images/Tesla_Inc.-Wordmark-Black-Logo.wine-6bbe293a.png"  alt="logo">
+            <ul>
+                <li><a href="#" id="models">MODEL S</a></li>
+                <li><a href="#" id="model3" >MODEL 3</a></li>
+                <li><a href="#" id="modelx">MODEL X</a></li>
+                <li><a href="#" id="modely">MODEL Y</a></li>
+    
+                 
+            </ul>
+            <a href="" class="btn">Reserve now</a>
+        </nav>
+
+        <div class="info">
+            <div>
+                <h2>1.9s</h2>
+                <p>60 mph</p>
+            </div>
+            <div>
+                <h2>200 mph</h2>
+                <p>Top Speed</p>
+            </div>
+            <div>
+                <h2>396 mi</h2>
+                <p>Max Range</p>
+            </div>
+            
+            <div class="line">
+                
+            </div>
+            <div>
+                <h2 id="model"> Model S</h2>
+              
+            </div>
+
+        </div>
+    </div>
+    <script>
+
+        var header = document.getElementById("header");
+        var ms = document.getElementById("models");
+        var m3 = document.getElementById("model3");
+        var mx = document.getElementById("modelx");
+        var my = document.getElementById("modely");
+        // var my = document.getElementById("model"); // this is causing model Y to not response
+
+       ms.onclick = function () {
+
+        header.style.backgroundImage = "url(images/image-1.png)";
+           model.innerHTML = "Model S"
+       }
+       mx.onclick = function () {
+
+            header.style.backgroundImage = "url(images/image-2.png)";
+            model.innerHTML = "Model X"
+        }
+       m3.onclick = function () {
+
+                header.style.backgroundImage = "url(images/image-3.png)";
+                model.innerHTML = "Model 3"
+            }
+       my.onclick = function () {
+
+            header.style.backgroundImage = "url(images/image-4.png)";
+            model.innerHTML = "Model Y"
+        }
+      
+        </script>
+    </script>
+    
+</body>
+</html>
